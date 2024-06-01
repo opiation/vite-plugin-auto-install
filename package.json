@@ -1,0 +1,46 @@
+{
+  "name": "vite-plugin-auto-install",
+  "description": "A simply Vite plugin to automatically reinstall package dependencies when a package.json changes",
+  "keywords": [
+    "bun",
+    "npm",
+    "plugin",
+    "pnpm",
+    "vite",
+    "yarn"
+  ],
+  "homepage": "https://github.com/opiation/vite-plugin-auto-install#readme",
+  "license": "GPL-3.0-only",
+  "files": [
+    "auto-install.js",
+    "*.d.ts"
+  ],
+  "main": "auto-install.js",
+  "module": "auto-install.js",
+  "version": "0.1.0",
+  "exports": {
+    ".": {
+      "default": "./auto-install.js",
+      "import": "./auto-install.js",
+      "types": "./auto-install.d.ts"
+    }
+  },
+  "type": "module",
+  "types": "./auto-install.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opiation/vite-plugin-auto-install"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.13.0",
+    "husky": "^9.0.11",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}
